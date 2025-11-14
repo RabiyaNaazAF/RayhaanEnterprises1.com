@@ -111,7 +111,9 @@ export default function Home() {
               </Link>
             </Button>
             <Button variant="outline" size="lg" className="text-lg bg-background/20 backdrop-blur-sm border-accent/50 text-accent hover:bg-accent/10">
-              Explore Services
+              <Link to="/services">
+                Our Services
+              </Link>
             </Button>
           </div>
         </div>
@@ -167,9 +169,9 @@ export default function Home() {
               we craft immersive environments that elevate your lifestyle.
             </p>
 
-            <button className="px-7 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-300 transition">
-              <a href="/services">Explore Our Creations</a>
-            </button>
+            <Button variant="outline" size="lg" className="bg-white text-black hover:bg-gray-300" asChild>
+              <Link to="/services">Explore Our Creations</Link>
+            </Button>
           </div>
 
           {/* ✅ RIGHT SIDE: BEFORE/AFTER SLIDER */}
@@ -210,9 +212,7 @@ export default function Home() {
               chosen to enhance the feel of your living experience.
             </p>
 
-            <button className="px-7 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-300 transition">
-              <a href="/services">See More Transformations</a>
-            </button>
+            
           </div>
 
           {/* ✅ RIGHT SIDE: SLIDER */}
@@ -258,9 +258,9 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <Button variant="link" className="p-0 h-auto font-semibold" asChild>
-                    <Link to="/services">
-                      Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                  <Button variant="link" className="p-0 h-auto font-semibold text-white" asChild>
+                    <Link to="/services"  >
+                      Learn More
                     </Link>
                   </Button>
                 </CardContent>
@@ -355,7 +355,7 @@ export default function Home() {
           <p className="text-xl mb-8 text-accent/90 max-w-2xl mx-auto">
             Get a free consultation with our design experts and bring your dream home to life
           </p>
-          <Button variant="default" size="lg" className="text-lg bg-background text-accent hover:bg-background/90 shadow-[var(--shadow-elegant)]" asChild>
+          <Button variant="hero" size="lg" className="text-lg bg-accent text-accent-foreground hover:bg-accent/90 shadow-[var(--shadow-elegant)]" asChild>
             <Link to="/contact">
               Schedule Free Consultation <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/rayhaan-logo.jpg";
+import logo from "@/assets/logo.png";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -39,6 +39,7 @@ export const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className={`text-sm font-medium transition-colors hover:text-accent ${
                   location.pathname === link.path ? "text-accent" : "text-foreground"
                 }`}
@@ -66,7 +67,10 @@ export const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={`block py-2 text-sm font-medium transition-colors ${
                   location.pathname === link.path ? "text-accent" : "text-foreground"
                 }`}

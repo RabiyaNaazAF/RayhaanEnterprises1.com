@@ -169,8 +169,8 @@ export default function Services() {
                     </div>
 
                     <Button variant="hero" size="lg" asChild>
-                      <Link to="/sofa-collection">
-                        View Collection <ArrowRight className="ml-2 w-5 h-5" />
+                      <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                        Contact Us <ArrowRight className="ml-2 w-5 h-5" />
                       </Link>
                     </Button>
                   </div>
@@ -224,7 +224,7 @@ export default function Services() {
             Contact us today for a free consultation and quote
           </p>
           <Button variant="default" size="lg" className="text-lg bg-background text-accent hover:bg-background/90 shadow-[var(--shadow-elegant)]" asChild>
-            <Link to="/contact">
+            <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               Schedule Consultation <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>

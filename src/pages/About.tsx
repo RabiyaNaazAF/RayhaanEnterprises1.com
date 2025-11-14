@@ -81,7 +81,7 @@ export default function About() {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="text-lg bg-background/20 backdrop-blur-sm border-accent/50 text-accent hover:bg-accent/10">
-                View Our Work
+               <Link to="/services">View Our Work</Link> 
               </Button>
             </div>
           </div>
@@ -260,9 +260,9 @@ export default function About() {
               we craft immersive environments that elevate your lifestyle.
             </p>
 
-            <button className="px-7 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-300 transition">
-              <a href="/services">Explore Our Creations</a>
-            </button>
+            <Button variant="outline" size="lg" className="bg-white text-black hover:bg-gray-300" asChild>
+              <Link to="/services">Explore Our Creations</Link>
+            </Button>
           </div>
 
           {/* ✅ RIGHT SIDE: BEFORE/AFTER SLIDER */}
@@ -303,9 +303,9 @@ export default function About() {
               chosen to enhance the feel of your living experience.
             </p>
 
-            <button className="px-7 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-300 transition">
-              <a href="/services">See More Transformations</a>
-            </button>
+            <Button variant="outline" size="lg" className="bg-white text-black hover:bg-gray-300" asChild>
+              <Link to="/services">See More Transformations</Link>
+            </Button>
           </div>
 
           {/* ✅ RIGHT SIDE: SLIDER */}

@@ -124,7 +124,7 @@ export default function SofaCollection() {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" className="bg-background/20 backdrop-blur-sm border-accent/50 text-accent hover:bg-accent/10" asChild>
-                <Link to="/services">
+                <Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                   View All Services
                 </Link>
               </Button>
@@ -195,7 +195,7 @@ export default function SofaCollection() {
                   </div>
 
                   <Button variant="outline" size="sm" className="w-full" asChild>
-                    <Link to="/contact">
+                    <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                       Inquire Now
                     </Link>
                   </Button>
@@ -366,7 +366,7 @@ export default function SofaCollection() {
             Contact us today for a personalized consultation and discover the perfect sofa for your home
           </p>
           <Button variant="default" size="lg" className="text-lg bg-background text-accent hover:bg-background/90 shadow-[var(--shadow-elegant)]" asChild>
-            <Link to="/contact">
+            <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               Schedule Consultation <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>

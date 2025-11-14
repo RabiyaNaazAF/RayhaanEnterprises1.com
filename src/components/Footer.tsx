@@ -71,7 +71,7 @@ into extraordinary experiences — shaped around your vision, style, and comfort
         </div>
       
         <div className="border-t border-accent/20 mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <pre>&copy; {new Date().getFullYear()} RAYHAAN ENTERPRISES. All rights reserved.                                                                                              Developed by Rabiya Naaz A.F</pre>
+          <pre>&copy; {new Date().getFullYear()} RAYHAAN ENTERPRISES. All rights reserved.                                                                                     Developed by Rabiya Naaz A.F</pre>
         </div>
       </div>
     </footer>
